@@ -1,0 +1,140 @@
+\documentclass[a4paper,10.8pt]{article}
+
+\usepackage{url}
+\usepackage{parskip}
+\usepackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.92]{geometry}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[unicode]{hyperref}
+\usepackage{fontawesome5}
+\usepackage{microtype}
+
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+
+\titleformat{\section}{\large\bfseries\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{6pt}{6pt}
+
+% Job environment
+\newenvironment{joblong}[2]
+{
+    \vspace{2pt}
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{\normalsize #1} & \hfill & {\normalsize #2} \\[2pt]
+    \end{tabularx}
+    \begin{minipage}[t]{\linewidth}
+    \small
+}
+{
+    \end{minipage}\vspace{2pt}
+}
+
+\begin{document}
+\pagestyle{empty}
+
+% ================= HEADER =================
+\begin{center}
+    {\Huge \textbf{Anish Rijal}} \\[6pt]
+    Dallas, TX \\[2pt]
+    \href{mailto:anishrijal412@gmail.com}{\faEnvelope\ anishrijal412@gmail.com} \ $|$ \
+    \href{tel:+14699825335}{\faMobile\ +1 (469) 982-5335} \ $|$ \
+    \href{https://www.linkedin.com/in/anishrijal412}{\faLinkedin\ linkedin.com/in/anishrijal412} \ $|$ \
+    \href{https://github.com/anishrijal412}{\faGithub\ github.com/anishrijal412}
+\end{center}
+
+% ================= TITLE + SUMMARY =================
+\section*{Backend Software Engineer \,|\, ASP.NET \& Cloud}
+
+Backend Software Engineer with 4+ years of professional experience building scalable backend systems using C\#, .NET, and ASP.NET Core. Experienced in developing RESTful APIs, microservices, and data-driven applications deployed in cloud environments. Proven experience modernizing legacy VB.NET applications to .NET Core, optimizing SQL Server performance through stored procedure and query tuning, and implementing secure AWS S3 workflows. Strong background in Agile/Scrum teams, unit testing with xUnit, and production support.
+
+% ================= SKILLS =================
+\section{Technical Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+Core \& Languages & C\#, .NET, ASP.NET Core, RESTful APIs, Microservices, Object-Oriented Programming \\
+Databases & SQL Server (T-SQL, Stored Procedures, Indexing), RavenDB (NoSQL, Document Database) \\
+Web Technologies & ASP.NET MVC, Razor Pages, JavaScript, HTML, CSS, Bootstrap \\
+Cloud \& DevOps & AWS (S3, EC2, Lambda), CI/CD Pipelines, Azure (basic familiarity) \\
+Testing \& API Tools & xUnit, Swagger, Postman \\
+Tools \& Methodologies & Git, Bitbucket, Jira, Agile Scrum, Code Reviews \\
+\end{tabularx}
+
+% ================= EXPERIENCE =================
+\section{Professional Experience}
+
+\begin{joblong}{Cedar Gate Technologies, Greenwich, CT, USA \textbullet\ Software Engineer}{Feb 2023 -- Aug 2024}
+\begin{itemize}[nosep,leftmargin=1em,itemsep=2pt,label=\textbullet]
+\item Designed and developed 10+ production-grade RESTful APIs and backend services using ASP.NET Core and .NET, supporting critical US healthcare application workflows.
+\item Migrated legacy VB.NET components to .NET Core, improving application maintainability, deployment stability, and scalability.
+\item Implemented multi-threaded and concurrent processing to handle high-volume API requests \& improve backend throughput under load.
+\item Built secure AWS S3 file upload \& download workflows with validation \& access control, supporting sensitive healthcare data processing.
+\item Optimized SQL Server performance by refactoring stored procedures, applying indexing strategies to reduce query latency and improving API response times under peak load
+\item Collaborated with frontend teams to align Razor UI changes with backend API contracts during application modernization efforts.
+\item Improved system reliability by adding unit and regression tests using xUnit, reducing production defects during release cycles.
+\end{itemize}
+
+\textbf{Technologies:} C\#, .NET, ASP.NET Core, REST APIs, Microservices, SQL Server, AWS (S3), xUnit, VB.NET, RavenDB
+\end{joblong}
+
+\begin{joblong}{IT Sansaar Pvt Ltd, Kathmandu, Nepal \textbullet\ Junior Software Engineer}{Mar 2021 -- Feb 2023}
+\begin{itemize}[nosep,leftmargin=1em,itemsep=2pt,label=\textbullet]
+\item Developed and maintained REST APIs and backend services using C\# and ASP.NET Core for enterprise web applications.
+\item Designed and optimized SQL Server database objects (stored procedures, functions, triggers) supporting internal business systems.
+\item Applied LINQ and Entity Framework patterns to build maintainable and reusable data access layers.
+\item Documented REST API endpoints using Swagger/Postman and collaborated with cross-functional teams in Agile Scrum environments.
+\end{itemize}
+
+\textbf{Technologies:} C\#, .NET, ASP.NET Core, REST APIs, SQL Server, LINQ, Swagger, Postman
+\end{joblong}
+
+\begin{joblong}{Prabhu Pay, Kathmandu, Nepal \textbullet\ Software Engineer Intern}{Sept 2020 -- Jan 2021}
+\begin{itemize}[nosep,leftmargin=1em,itemsep=2pt,label=\textbullet]
+\item Assisted in backend feature development using C\# and ASP.NET MVC for transactional accounting systems.
+\item Supported SQL Server queries and database structures for financial data processing and reporting.
+\item Contributed to UI integration using HTML, CSS, and JavaScript and assisted in debugging and documentation.
+\end{itemize}
+
+\textbf{Technologies:} C\#, ASP.NET MVC, SQL Server, JavaScript, HTML, CSS
+\end{joblong}
+
+% ================= EDUCATION =================
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+\textbf{Master’s in Computer Science}, \href{https://www.uco.edu/}{\textit{University of Central Oklahoma}}, Edmond, OK, USA & Aug 2024 -- 2026 \\
+Relevant Coursework: Software Engineering, Data Structures \& Algorithms, Applications Database, Cloud Computing \\[2pt]
+\textbf{Bachelor’s in Computer Engineering}, \href{https://www.hcoe.edu.np/}{\textit{Himalaya College of Engineering}}, Lalitpur, Nepal & Aug 2018 -- May 2022 \\
+Relevant Coursework: Data Structures, Computer Networks, Operating Systems, Algorithm Design, Database Systems \\
+\end{tabularx}
+
+% ================= PROJECTS =================
+\section{Projects}
+
+\begin{joblong}{SyllabusRAG: Backend RAG Chatbot System}{2025}
+\href{https://github.com/anishrijal412/RAG-CHATBOT}{\faGithub\ github.com/anishrijal412/RAG-CHATBOT}
+
+\begin{itemize}[nosep,leftmargin=1em,itemsep=2pt,label=\textbullet]
+\item Designed and built a backend system enabling semantic search over academic syllabi using a Retrieval-Augmented Generation (RAG) architecture.
+\item Developed REST APIs using Python Flask for document ingestion, embedding generation, and question-answer workflows.
+\item Implemented role-based access control (RBAC) and secure session management for professor and student users.
+\item Built an LLM-agnostic architecture allowing seamless integration of local or commercial language models.
+\end{itemize}
+
+\textbf{Technologies:} Python, Flask, REST APIs, SQLite, RAG, Semantic Search, RBAC
+\end{joblong}
+
+\begin{joblong}{SmartBizAI: Business Management System with AI Assistant}{2024}
+\begin{itemize}[nosep,leftmargin=1em,itemsep=2pt,label=\textbullet]
+\item Designed and developed a full-stack business management system with role-based authentication and management dashboards.
+\item Implemented employee, inventory, and accounting modules with secure CRUD operations and data validation.
+\item Built a financial tracking system including income, expenses, invoicing, and profit/loss reporting.
+\item Integrated an AI-powered assistant to answer business queries using application data and role-based access control.
+\item Applied clean architecture principles with separation of concerns, DTOs, and dependency injection.
+\end{itemize}
+
+\textbf{Technologies:} C\#, ASP.NET Core, Blazor, Entity Framework Core, SQL Server, REST APIs, JWT, OpenAI API
+\end{joblong}
+
+
+\end{document}
